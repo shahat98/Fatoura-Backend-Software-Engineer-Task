@@ -50,7 +50,7 @@ api/users/updaterole | PATCH | { user_id , role } | this a restricted route for 
 
 ### API Diagrams
 * Signup :
-  ![notification](https://github.com/shahat98/Fatoura-Backend-Software-Engineer-Task/blob/main/attachments/signup.png)
+  ![notification](https://github.com/shahat98/Fatoura-Backend-Software-Engineer-Task/blob/main/attachments/signup-.png)
 * Login :
   ![notification](https://github.com/shahat98/Fatoura-Backend-Software-Engineer-Task/blob/main/attachments/login.png)
 * ProtectedRoute :
@@ -63,6 +63,6 @@ api/users/updaterole | PATCH | { user_id , role } | this a restricted route for 
 * Password reset.
 * Update user data.
 
-### Things i learned during the coarse of this task :
-* I start to learn Node.js and this task was a good practice for the begining.
+### Things i learned during the course  of this task :
+* I restart to learn Node.js and this task was a good practice for the begining.
 
