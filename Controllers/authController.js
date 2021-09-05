@@ -18,7 +18,7 @@ const sendToken = (status, user, res) => {
       Date.now() + process.env.JWT_COOKIE_EXPIRES_IN * 24 * 60 * 60 * 1000
     ),
     //secure : true, // IN production.
-    httpOnly:true
+    httpOnly: true,
   });
   user.password = undefined;
   res.status(status).json({
@@ -72,17 +72,15 @@ exports.login = async (req, res, next) => {
 
     // Send the Token
     sendToken(200, user, res);
-
-    next();
   } catch (err) {
-    return retError(400, err, res);
+     retError(400, err, res);
   }
 };
 
 exports.logout = (req, res) => {
   res.cookie('jwt', 'loggedout', {
     expires: new Date(Date.now() + 10 * 1000),
-    httpOnly: true
+    httpOnly: true,
   });
   res.status(200).json({ status: 'success' });
 };
