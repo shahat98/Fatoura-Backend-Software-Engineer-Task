@@ -21,7 +21,7 @@ exports.getAllUsers = async (req, res) => {
 exports.updateRole = async (req, res) => {
   try {
     if (!req.body.role || !req.body.id) {
-      return retError('400', 'User data  is missing', res);
+      return retError(400, 'User data  is missing', res);
     }
 
     const updatedUser = await User.findByIdAndUpdate(

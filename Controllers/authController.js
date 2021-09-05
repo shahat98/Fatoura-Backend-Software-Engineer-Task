@@ -30,13 +30,6 @@ const sendToken = (status, user, res) => {
   });
 };
 
-// (status, message, res) => {
-//   return res.status(status).json({
-//     status: 'fail',
-//     message: message,
-//   });
-// };
-
 // Signup
 exports.signup = async (req, res, next) => {
   try {
@@ -73,7 +66,7 @@ exports.login = async (req, res, next) => {
     // Send the Token
     sendToken(200, user, res);
   } catch (err) {
-     retError(400, err, res);
+    retError(400, err, res);
   }
 };
 
