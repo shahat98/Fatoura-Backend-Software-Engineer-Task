@@ -18,7 +18,9 @@ npm install
 npm start
 ```
 * the DB hosted in MongoDB atlas host so the project will connect to it directly.
-* Important Note : Some internet provider can not get access to Atlas host so if that happen try another one.
+* Important Note : 
+  * Some internet provider can not get access to Atlas host so if that happen try another one.
+  * admin user credentails attached in task solution mail.
 
 
 ### API endpoints:
